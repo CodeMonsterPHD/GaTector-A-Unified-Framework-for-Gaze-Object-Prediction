@@ -109,7 +109,7 @@ You can download pretrained models from baiduyun
 ## Get_Result
 note:
 
-get_map.py path: ./lib/get_map.py
+get_map.py path：'./lib/get_map.py'
 Object detection result
 
 get mAP
