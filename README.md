@@ -134,6 +134,8 @@ get wUOC
 ```
 python get_map.py --train_mode 0 --flag 1 --dataset 0
 ```
+note:
+You can test your data by modifying the images and annotations in './test_data/data_proc' or './test_data/VOCdevkit/VOC2007'
 
 ## Results
 
