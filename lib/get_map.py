@@ -126,8 +126,8 @@ if __name__ == "__main__":
                         new_f.write("%s %s %s %s %s\n" % (obj_name, left, top, right, bottom))
         print("Get GOO-real ground truth result done.")
     if (map_mode == 0 or map_mode == 2) and dataset == 0:
-        images_path = 'data/data_proc/images1/'
-        data_path = 'data/data_proc/data1/'
+        images_path =os.getcwd()+  'test_data/data_proc/images1/'
+        data_path =os.getcwd()+  'test_data/data_proc/data1/'
         out_path = map_out_path + '/ground-truth-synth/'
         class_list, _ = get_classes(classes_path)
         file_list = sorted(os.listdir(images_path))
