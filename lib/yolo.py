@@ -219,6 +219,11 @@ class YOLO(object):
         return tact_time
 
     def get_map_txt(self, dataset,train_mode,image_id, image, class_names, map_out_path):
+        if dataset==1:
+            f = open(os.path.join(map_out_path, "detection-real-results/" + image_id + ".txt"), "w")
+        if dataset==0:
+            f = open(os.path.join(map_out_path, "detection-synth-results/" + image_id + ".txt"), "w")
+        
         image_shape = np.array(np.shape(image)[0:2])
         # ---------------------------------------------------------#
         # Convert the image to an RGB image here to prevent the grayscale image from reporting errors during prediction.
@@ -277,11 +282,9 @@ class YOLO(object):
             if predicted_class not in class_names:
                 continue
             if dataset == 1:
-                f = open(os.path.join(map_out_path, "detection-real-results/" + image_id + ".txt"), "a+")
                 f.write("%s %s %s %s %s %s\n" % (
                     predicted_class, score[:6], str(int(left)), str(int(top)), str(int(right)), str(int(bottom))))
             if dataset == 0:
-                f = open(os.path.join(map_out_path, "detection-synth-results/" + image_id + ".txt"), "a+")
                 f.write("%s %s %s %s %s %s\n" % (
                 predicted_class, score[:6], str(int(left)), str(int(top)), str(int(right)), str(int(bottom))))
         f.close()
