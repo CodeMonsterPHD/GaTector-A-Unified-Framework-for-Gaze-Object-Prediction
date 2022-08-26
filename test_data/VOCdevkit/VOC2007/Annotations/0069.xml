@@ -1,0 +1,1243 @@
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>0069.xml</filename>
+    <source>
+        <database>The VOC2007 Database</database>
+        <annotation>PASCAL VOC2007</annotation>
+        <image>flickr</image>
+        <flickrid>325991873</flickrid>
+    </source>
+    <owner>
+        <flickrid>null</flickrid>
+        <name>null</name>
+    </owner>    
+    <size>
+        <width>1920</width>
+        <height>1080</height>
+        <depth>3</depth>
+    </size>
+    <segmented>0</segmented>
+    
+    <object>        
+        <name>Honey Stars</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>54</xmin>
+            <ymin>211</ymin>
+            <xmax>207</xmax>
+            <ymax>436</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Honey Stars</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>153</xmin>
+            <ymin>180</ymin>
+            <xmax>312</xmax>
+            <ymax>396</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Honey Stars</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>273</xmin>
+            <ymin>158</ymin>
+            <xmax>408</xmax>
+            <ymax>360</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Koko Krunch</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>384</xmin>
+            <ymin>141</ymin>
+            <xmax>513</xmax>
+            <ymax>328</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Koko Krunch</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>480</xmin>
+            <ymin>121</ymin>
+            <xmax>597</xmax>
+            <ymax>299</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Koko Krunch</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>579</xmin>
+            <ymin>105</ymin>
+            <xmax>681</xmax>
+            <ymax>276</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Chocolate Chips</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>677</xmin>
+            <ymin>170</ymin>
+            <xmax>740</xmax>
+            <ymax>251</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Chocolate Chips</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>678</xmin>
+            <ymin>143</ymin>
+            <xmax>792</xmax>
+            <ymax>224</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Chocolate Chips</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>741</xmin>
+            <ymin>130</ymin>
+            <xmax>861</xmax>
+            <ymax>209</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>774</xmin>
+            <ymin>292</ymin>
+            <xmax>864</xmax>
+            <ymax>351</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>789</xmin>
+            <ymin>328</ymin>
+            <xmax>864</xmax>
+            <ymax>377</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>792</xmin>
+            <ymin>353</ymin>
+            <xmax>861</xmax>
+            <ymax>409</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>692</xmin>
+            <ymin>319</ymin>
+            <xmax>785</xmax>
+            <ymax>382</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>696</xmin>
+            <ymin>355</ymin>
+            <xmax>789</xmax>
+            <ymax>414</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>698</xmin>
+            <ymin>380</ymin>
+            <xmax>791</xmax>
+            <ymax>445</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Super Fruits</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>651</xmin>
+            <ymin>342</ymin>
+            <xmax>699</xmax>
+            <ymax>464</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Super Fruits</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>611</xmin>
+            <ymin>358</ymin>
+            <xmax>662</xmax>
+            <ymax>482</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Super Fruits</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>573</xmin>
+            <ymin>369</ymin>
+            <xmax>624</xmax>
+            <ymax>497</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Oishi Prawn</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>347</xmin>
+            <ymin>413</ymin>
+            <xmax>470</xmax>
+            <ymax>564</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Oishi Prawn</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>450</xmin>
+            <ymin>389</ymin>
+            <xmax>546</xmax>
+            <ymax>549</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Oishi Prawn</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>249</xmin>
+            <ymin>440</ymin>
+            <xmax>396</xmax>
+            <ymax>607</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>iHop</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>222</xmin>
+            <ymin>524</ymin>
+            <xmax>306</xmax>
+            <ymax>643</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>iHop</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>171</xmin>
+            <ymin>547</ymin>
+            <xmax>249</xmax>
+            <ymax>669</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>iHop</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>123</xmin>
+            <ymin>569</ymin>
+            <xmax>198</xmax>
+            <ymax>693</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Wafer</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>162</xmin>
+            <ymin>769</ymin>
+            <xmax>240</xmax>
+            <ymax>922</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Fita</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>288</xmin>
+            <ymin>656</ymin>
+            <xmax>372</xmax>
+            <ymax>769</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Fita</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>345</xmin>
+            <ymin>632</ymin>
+            <xmax>423</xmax>
+            <ymax>742</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Fita</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>398</xmin>
+            <ymin>612</ymin>
+            <xmax>467</xmax>
+            <ymax>718</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Fita</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>300</xmin>
+            <ymin>747</ymin>
+            <xmax>378</xmax>
+            <ymax>848</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Fita</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>369</xmin>
+            <ymin>720</ymin>
+            <xmax>429</xmax>
+            <ymax>821</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Fita</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>423</xmin>
+            <ymin>697</ymin>
+            <xmax>474</xmax>
+            <ymax>796</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Buttercake</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>467</xmin>
+            <ymin>654</ymin>
+            <xmax>566</xmax>
+            <ymax>769</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Buttercake</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>543</xmin>
+            <ymin>610</ymin>
+            <xmax>651</xmax>
+            <ymax>718</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Buttercake</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>627</xmin>
+            <ymin>564</ymin>
+            <xmax>726</xmax>
+            <ymax>667</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Fresh Milk</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>708</xmin>
+            <ymin>512</ymin>
+            <xmax>756</xmax>
+            <ymax>609</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Fresh Milk</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>813</xmin>
+            <ymin>466</ymin>
+            <xmax>861</xmax>
+            <ymax>556</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Kellogg Corn Flakes</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>534</xmin>
+            <ymin>726</ymin>
+            <xmax>630</xmax>
+            <ymax>895</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Kellogg Corn Flakes</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>450</xmin>
+            <ymin>774</ymin>
+            <xmax>555</xmax>
+            <ymax>950</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Butterlicious</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>360</xmin>
+            <ymin>911</ymin>
+            <xmax>453</xmax>
+            <ymax>1008</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Butterlicious</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>288</xmin>
+            <ymin>963</ymin>
+            <xmax>390</xmax>
+            <ymax>1066</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Butterlicious</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>216</xmin>
+            <ymin>1006</ymin>
+            <xmax>309</xmax>
+            <ymax>1080</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Danisa</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1509</xmin>
+            <ymin>855</ymin>
+            <xmax>1632</xmax>
+            <ymax>999</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Danisa</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1413</xmin>
+            <ymin>816</ymin>
+            <xmax>1539</xmax>
+            <ymax>956</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Danisa</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1328</xmin>
+            <ymin>783</ymin>
+            <xmax>1445</xmax>
+            <ymax>911</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Butterlicious</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1263</xmin>
+            <ymin>797</ymin>
+            <xmax>1338</xmax>
+            <ymax>873</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Butterlicious</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1181</xmin>
+            <ymin>765</ymin>
+            <xmax>1256</xmax>
+            <ymax>839</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Butterlicious</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1115</xmin>
+            <ymin>742</ymin>
+            <xmax>1190</xmax>
+            <ymax>814</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Locally Mango</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1086</xmin>
+            <ymin>684</ymin>
+            <xmax>1131</xmax>
+            <ymax>787</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Locally Mango</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1056</xmin>
+            <ymin>675</ymin>
+            <xmax>1101</xmax>
+            <ymax>776</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Locally Mango</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1026</xmin>
+            <ymin>663</ymin>
+            <xmax>1068</xmax>
+            <ymax>764</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Bear brand</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>990</xmin>
+            <ymin>660</ymin>
+            <xmax>1038</xmax>
+            <ymax>754</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Bear brand</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>957</xmin>
+            <ymin>648</ymin>
+            <xmax>1005</xmax>
+            <ymax>740</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Bear brand</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>927</xmin>
+            <ymin>635</ymin>
+            <xmax>975</xmax>
+            <ymax>727</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Bear brand</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>890</xmin>
+            <ymin>625</ymin>
+            <xmax>935</xmax>
+            <ymax>715</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>891</xmin>
+            <ymin>467</ymin>
+            <xmax>990</xmax>
+            <ymax>528</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>891</xmin>
+            <ymin>502</ymin>
+            <xmax>981</xmax>
+            <ymax>558</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>891</xmin>
+            <ymin>527</ymin>
+            <xmax>981</xmax>
+            <ymax>583</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>981</xmin>
+            <ymin>499</ymin>
+            <xmax>1089</xmax>
+            <ymax>558</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>981</xmin>
+            <ymin>531</ymin>
+            <xmax>1077</xmax>
+            <ymax>583</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Choco Crunchies</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>981</xmin>
+            <ymin>558</ymin>
+            <xmax>1077</xmax>
+            <ymax>614</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Camomille</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1077</xmin>
+            <ymin>542</ymin>
+            <xmax>1152</xmax>
+            <ymax>603</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Camomille</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1077</xmin>
+            <ymin>583</ymin>
+            <xmax>1137</xmax>
+            <ymax>637</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Camomille</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1137</xmin>
+            <ymin>562</ymin>
+            <xmax>1212</xmax>
+            <ymax>627</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Camomille</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1137</xmin>
+            <ymin>605</ymin>
+            <xmax>1200</xmax>
+            <ymax>659</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Camomille</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1200</xmin>
+            <ymin>582</ymin>
+            <xmax>1281</xmax>
+            <ymax>643</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Camomille</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1200</xmin>
+            <ymin>626</ymin>
+            <xmax>1278</xmax>
+            <ymax>682</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Buttercake</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1302</xmin>
+            <ymin>630</ymin>
+            <xmax>1428</xmax>
+            <ymax>731</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Buttercake</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1410</xmin>
+            <ymin>666</ymin>
+            <xmax>1548</xmax>
+            <ymax>774</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Buttercake</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1527</xmin>
+            <ymin>706</ymin>
+            <xmax>1665</xmax>
+            <ymax>819</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Mamon</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1566</xmin>
+            <ymin>482</ymin>
+            <xmax>1719</xmax>
+            <ymax>610</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Mamon</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1440</xmin>
+            <ymin>450</ymin>
+            <xmax>1593</xmax>
+            <ymax>574</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Mamon</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1326</xmin>
+            <ymin>418</ymin>
+            <xmax>1464</xmax>
+            <ymax>537</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Kimchi Noodles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1278</xmin>
+            <ymin>427</ymin>
+            <xmax>1332</xmax>
+            <ymax>495</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Kimchi Noodles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1233</xmin>
+            <ymin>418</ymin>
+            <xmax>1281</xmax>
+            <ymax>488</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Kimchi Noodles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1181</xmin>
+            <ymin>402</ymin>
+            <xmax>1232</xmax>
+            <ymax>467</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Kimchi Noodles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1137</xmin>
+            <ymin>391</ymin>
+            <xmax>1185</xmax>
+            <ymax>456</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Grahams</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1047</xmin>
+            <ymin>348</ymin>
+            <xmax>1158</xmax>
+            <ymax>445</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Grahams</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>969</xmin>
+            <ymin>333</ymin>
+            <xmax>1077</xmax>
+            <ymax>423</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Grahams</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>894</xmin>
+            <ymin>315</ymin>
+            <xmax>1002</xmax>
+            <ymax>403</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Pik-nik</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>897</xmin>
+            <ymin>97</ymin>
+            <xmax>948</xmax>
+            <ymax>207</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Pik-nik</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>941</xmin>
+            <ymin>100</ymin>
+            <xmax>992</xmax>
+            <ymax>213</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Pik-nik</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>984</xmin>
+            <ymin>107</ymin>
+            <xmax>1020</xmax>
+            <ymax>222</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Pringles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1020</xmin>
+            <ymin>96</ymin>
+            <xmax>1056</xmax>
+            <ymax>231</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Pringles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1049</xmin>
+            <ymin>101</ymin>
+            <xmax>1088</xmax>
+            <ymax>234</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Pringles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1079</xmin>
+            <ymin>108</ymin>
+            <xmax>1118</xmax>
+            <ymax>243</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Pringles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1113</xmin>
+            <ymin>108</ymin>
+            <xmax>1155</xmax>
+            <ymax>245</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Pringles</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1134</xmin>
+            <ymin>114</ymin>
+            <xmax>1176</xmax>
+            <ymax>254</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Hansel</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1164</xmin>
+            <ymin>177</ymin>
+            <xmax>1296</xmax>
+            <ymax>276</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Hansel</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1260</xmin>
+            <ymin>196</ymin>
+            <xmax>1398</xmax>
+            <ymax>299</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Hansel</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1368</xmin>
+            <ymin>214</ymin>
+            <xmax>1509</xmax>
+            <ymax>324</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Chuckie</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1512</xmin>
+            <ymin>216</ymin>
+            <xmax>1593</xmax>
+            <ymax>342</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Chuckie</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1581</xmin>
+            <ymin>229</ymin>
+            <xmax>1665</xmax>
+            <ymax>355</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Chuckie</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>1653</xmin>
+            <ymin>241</ymin>
+            <xmax>1743</xmax>
+            <ymax>371</ymax>
+        </bndbox>
+    </object>
+    
+    <object>        
+        <name>Head</name>
+        <pose>Rear</pose>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+        <bndbox>
+            <xmin>747</xmin>
+            <ymin>488</ymin>
+            <xmax>858</xmax>
+            <ymax>636</ymax>
+        </bndbox>
+    </object>
+    
+</annotation>
