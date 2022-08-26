@@ -94,11 +94,11 @@ To carry out experiments on the GOO dataset, please follow these commands:
 
 Experiments on GOO-Synth:
 ```train
-python main.py --train_mode 0 --train_dir './goo_dataset/goosynth/train/images/' --train_annotation './goo_dataset/goosynth/picklefile/goosynth_train_v2_no_segm.pkl' --test_dir './goo_dataset/goosynth/test/images/' --test_annotation './goo_dataset/goosynth/picklefile/goosynth_test_v2_no_segm.pkl'
+python main.py --train_mode 0 --train_dir './data/goo_dataset/goosynth/train/images/' --train_annotation './data/goo_dataset/goosynth/picklefile/goosynth_train_v2_no_segm.pkl' --test_dir './data/goo_dataset/goosynth/test/images/' --test_annotation './data/goo_dataset/goosynth/picklefile/goosynth_test_v2_no_segm.pkl'
 ```
 Experiments on GOO-Real:
 ```train
-python main.py --train_mode 1 --train_dir './goo_dataset/gooreal/train_data/' --train_annotation './goo_dataset/gooreal/train.pickle' --test_dir './goo_dataset/gooreal/test_data/' --test_annotation './goo_dataset/gooreal/test.pickle/'
+python main.py --train_mode 1 --train_dir './data/goo_dataset/gooreal/train_data/' --train_annotation './data/goo_dataset/gooreal/train.pickle' --test_dir './data/goo_dataset/gooreal/test_data/' --test_annotation './data/goo_dataset/gooreal/test.pickle/'
 ```
 
 ## Pre-trained Models
@@ -107,6 +107,9 @@ You can download pretrained models from baiduyun
 [Pre-trained Models](https://pan.baidu.com/s/1KxVGSS8MXhEwyEH5wAPPsw) (code:xfyk). 
 
 ## Get_Result
+note:
+
+get_map.py path: ./lib/get_map.py
 Object detection result
 
 get mAP
