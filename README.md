@@ -151,10 +151,12 @@ Our model achieves the following performance on GOOSynth dataset:
 ## Our models
 
 GOO-real (object detection)
-[GOO-real ep100-loss0.374-val_loss0.359]:(https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EVaXPSr8w6NBo4wFy4OcEVsBnUMPE8Jb_92BpukWRnC4lg)
+
+[GOO-real ep100-loss0.374-val_loss0.359](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EVaXPSr8w6NBo4wFy4OcEVsBnUMPE8Jb_92BpukWRnC4lg)
 
 GOO-synth (gaze estimation + object detection)
-[GOO-synth ep098-loss15.975-val_loss42.955]:(https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ESIoyH3COT5Bp4RCRQ7ipMgBmeHxPx-hVgSvDIz9JmICNw)
+
+[GOO-synth ep098-loss15.975-val_loss42.955](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ESIoyH3COT5Bp4RCRQ7ipMgBmeHxPx-hVgSvDIz9JmICNw)
 
 ## Citation
 
