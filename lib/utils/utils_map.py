@@ -291,7 +291,7 @@ def draw_plot_func(dictionary, n_classes, window_title, plot_title, x_label, out
     plt.close()
 
 
-def get_map(MINOVERLAP, DATASET,flag,draw_plot, path='./map_out'):
+def get_map(MINOVERLAP, DATASET,getwUOC,draw_plot, path='./map_out'):
     if DATASET==1:
         GT_PATH = os.path.join(path, 'ground-truth-real')
         DR_PATH = os.path.join(path, 'detection-real-results')
@@ -701,9 +701,11 @@ def get_map(MINOVERLAP, DATASET,flag,draw_plot, path='./map_out'):
 
         results_file.write("\n# mAP of all classes\n")
         mAP = sum_AP / n_classes
-        text = "mAP = {0:.2f}%".format(mAP * 100)
+        text = "wUOC = {0:.2f}%".format(mAP * 100) if getwUOC else "mAP = {0:.2f}%".format(mAP * 100)
         results_file.write(text + "\n")
         print(text)
+        if getwUOC:
+            return mAP
 
     shutil.rmtree(TEMP_FILES_PATH)
 
@@ -858,10 +860,6 @@ def preprocess_gt(gt_path, class_names):
         image['file_name'] = image_id + '.jpg'
         image['width'] = 1
         image['height'] = 1
-        # -----------------------------------------------------------------#
-        #   感谢 多学学英语吧 的提醒
-        #   解决了'Results do not correspond to current coco set'问题
-        # -----------------------------------------------------------------#
         image['id'] = int(image_id)
 
         for line in lines_list:
