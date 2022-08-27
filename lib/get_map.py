@@ -12,16 +12,16 @@ from yolo import YOLO
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='arguement')
     parser.add_argument('--train_mode', type=int, default=0)
-    parser.add_argument('--flag', type=int, default=0)
+    parser.add_argument('--getwUOC', type=bool, default=False)
     parser.add_argument('--dataset', type=int, default=0)
     args = parser.parse_args()
+    #wUOC or map
+    #False get map
+    #True get wUOC
+    getwUOC=args.getwUOC
     #0 gaze estimation and object detection
     #1 object detection
     train_mode=args.train_mode
-    #wUOC or map
-    #0 get map
-    #1 get wUOC
-    flag=args.flag
     # ------------------------------------------------------------------------------------------------------------------#
     #   map_mode is used to specify the content calculated when the file is running
     # -------------------------------------------------------------------------------------------------------------------#
@@ -147,9 +147,19 @@ if __name__ == "__main__":
             index = index + 1
         print("Get GOO-synth ground truth done!")
     if map_mode == 0 or map_mode == 3:
-        print("Get map.")
-        get_map(MINOVERLAP,dataset,flag,True,path=map_out_path)
-        print("Get map done.")
+        if getwUOC:
+            print("Get wUOC.")
+            sum=0
+            for iou in range(50,96,5):
+                iou/=100
+                sum+=get_map(iou,dataset,getwUOC,True,path=map_out_path)
+            wUOC=round(sum/10*100,2)
+            print("wUOC = {0:.2f}%".format(wUOC))
+            print("Get wUOC done.")
+        else:
+            print("Get map.")
+            get_map(MINOVERLAP, dataset, getwUOC, True, path=map_out_path)
+            print("Get map done.")
 
     if map_mode == 4:
         print("Get map.")
