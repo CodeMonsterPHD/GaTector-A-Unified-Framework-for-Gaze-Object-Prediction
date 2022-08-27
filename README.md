@@ -118,11 +118,11 @@ Object detection result
 
 get mAP
 ```
-python get_map.py --train_mode 1 --flag 0 --dataset 1
+python get_map.py --train_mode 1 --dataset 1
 ```
 get wUOC
 ```
-python get_map.py --train_mode 1 --flag 1 --dataset 1
+python get_map.py --train_mode 1 --getwUOC True --dataset 1
 ```
 
 Object detection + gaze estimation 
@@ -131,11 +131,11 @@ When you training the model, the index of gaze will be saved in gaze_performence
 
 get mAP
 ```
-python get_map.py --train_mode 0 --flag 0 --dataset 0
+python get_map.py --train_mode 0 --dataset 0
 ```
 get wUOC
 ```
-python get_map.py --train_mode 0 --flag 1 --dataset 0
+python get_map.py --train_mode 0 --getwUOC True --dataset 0
 ```
 note:
 You can test your data by modifying the images and annotations in './test_data/data_proc' or './test_data/VOCdevkit/VOC2007'
