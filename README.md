@@ -3,6 +3,9 @@ This repository is the official implementation of our CVPR2022 paper "GaTector: 
 ![Illustrating the architecture of the proposed GaTector](./figs/framework.png)
 
 ## Data Preparation
+note:
+We use GOO-real to obtain object detection results and GOO-synth to obtain gaze object prediction results
+
 The GOO dataset contains two subsets: GOO-Sync and GOO-Real. 
 
 You can download GOO-synth from OneDrive:
@@ -106,7 +109,7 @@ You can download pretrained models from baiduyun
 
 [Pre-trained Models](https://pan.baidu.com/s/1KxVGSS8MXhEwyEH5wAPPsw) (code:xfyk). 
 
-## Get_Result
+## Get Result
 note:
 
 get_map.py path：'./lib/get_map.py'
@@ -145,6 +148,13 @@ Our model achieves the following performance on GOOSynth dataset:
 | :---: | :---: | :---: | :--: | :--: | :--: | :-----------------------------: |
 | 0.957 | 0.073 | 14.91 | 56.8 | 95.3 | 62.5 |              65.47               |
 
+## Our models
+
+GOO-real (object detection)
+[GOO-real ep100-loss0.374-val_loss0.359]:(https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/EVaXPSr8w6NBo4wFy4OcEVsBnUMPE8Jb_92BpukWRnC4lg)
+
+GOO-synth (gaze estimation + object detection)
+[GOO-synth ep098-loss15.975-val_loss42.955]:(https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ESIoyH3COT5Bp4RCRQ7ipMgBmeHxPx-hVgSvDIz9JmICNw)
 
 ## Citation
 
