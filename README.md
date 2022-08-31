@@ -146,7 +146,7 @@ Our model achieves the following performance on GOOSynth dataset:
 
 |  AUC  | Dist. | Ang.  |  AP  | AP50 | AP75 | Gaze object prediction mDAP (%) |
 | :---: | :---: | :---: | :--: | :--: | :--: | :-----------------------------: |
-| 0.957 | 0.073 | 14.91 | 56.8 | 95.3 | 62.5 |              65.47               |
+| 0.957 | 0.073 | 14.91 | 56.8 | 95.3 | 62.5 |              81.34               |
 
 ## Our models
 
