@@ -5,7 +5,7 @@ import operator
 import os
 import shutil
 import sys
-
+import csv
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
@@ -482,30 +482,28 @@ def get_map(MINOVERLAP, DATASET,getwUOC,draw_plot, path='./map_out'):
                 bb = [float(x) for x in detection["bbox"].split()]
                 for obj in ground_truth_data:
                     if obj["class_name"] == class_name:
-                        if flag==1:
+                        if getwUOC==True:
                             bbgt = [float(x) for x in obj["bbox"].split()]
                             p = (bb[2] - bb[0] + 1) * (bb[3] - bb[1] + 1)
                             g = (bbgt[2] - bbgt[0] + 1) * (bbgt[3] - bbgt[1] + 1)
 
-                            iw = max(0, min(bb[2], bbgt[2]) - max(bb[0], bbgt[0])) + 1
-                            ih = max(0, min(bb[3], bbgt[3]) - max(bb[1], bbgt[1])) + 1
-                            if iw>0 and ih>0:
-                                p_and_g = p + g - iw * ih
+                            iw = max(0, min(bb[2], bbgt[2]) - max(bb[0], bbgt[0])+ 1)
+                            ih = max(0, min(bb[3], bbgt[3]) - max(bb[1], bbgt[1])+ 1)
+                            p_and_g = p + g - iw * ih
 
-                                a_xmin = min(bb[0], bbgt[0])
-                                a_ymin = min(bb[1], bbgt[1])
-                                a_xmax = min(bb[2], bbgt[2])
-                                a_ymax = min(bb[3], bbgt[3])
-                                a_box = (a_xmax - a_xmin + 1) * (a_ymax - a_ymin + 1)
+                            a_xmin = min(bb[0], bbgt[0])
+                            a_ymin = min(bb[1], bbgt[1])
+                            a_xmax = max(bb[2], bbgt[2])
+                            a_ymax = max(bb[3], bbgt[3])
+                            a_box = (a_xmax - a_xmin + 1) * (a_ymax - a_ymin + 1)
 
-                                w = min(p / g, g / p)
+                            w = min(p / g, g / p)
+                            wuoc = w * (p_and_g / a_box)
+                            if wuoc > ovmax:
 
-                                wuoc = w * (p_and_g / a_box)
-
-                                if wuoc > ovmax:
-                                    ovmax = wuoc
-                                    gt_match = obj
-                        if flag==0:
+                                ovmax = wuoc
+                                gt_match = obj
+                        else:
                             bbgt = [float(x) for x in obj["bbox"].split()]
                             bi = [max(bb[0], bbgt[0]), max(bb[1], bbgt[1]), min(bb[2], bbgt[2]), min(bb[3], bbgt[3])]
                             iw = bi[2] - bi[0] + 1
@@ -860,6 +858,10 @@ def preprocess_gt(gt_path, class_names):
         image['file_name'] = image_id + '.jpg'
         image['width'] = 1
         image['height'] = 1
+        # -----------------------------------------------------------------#
+        #   感谢 多学学英语吧 的提醒
+        #   解决了'Results do not correspond to current coco set'问题
+        # -----------------------------------------------------------------#
         image['id'] = int(image_id)
 
         for line in lines_list:
