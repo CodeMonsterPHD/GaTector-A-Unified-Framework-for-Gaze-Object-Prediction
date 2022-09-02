@@ -90,8 +90,8 @@ if __name__ == "__main__":
         print("Load model.")
         yolo = YOLO(confidence=0.001, nms_iou=0.5)
         print("Load model done.")
-        images_path = 'test_data/data_proc/images1/'
-        image_ids = open("test_data/data_proc/test.txt").read().strip().split()
+        images_path = os.path.abspath(os.path.join(os.getcwd(),'..'))+'/test_data/data_proc/images1/'
+        image_ids = open(os.path.abspath(os.path.join(os.getcwd(),'..'))+"/test_data/data_proc/test.txt").read().strip().split()
         print("Get GOO-synth predict result.")
         for image_id in tqdm(image_ids):
             image_path = images_path + image_id + ".png"
@@ -126,8 +126,8 @@ if __name__ == "__main__":
                         new_f.write("%s %s %s %s %s\n" % (obj_name, left, top, right, bottom))
         print("Get GOO-real ground truth result done.")
     if (map_mode == 0 or map_mode == 2) and dataset == 0:
-        images_path =os.getcwd()+  'test_data/data_proc/images1/'
-        data_path =os.getcwd()+  'test_data/data_proc/data1/'
+        images_path =os.path.abspath(os.path.join(os.getcwd(),'..'))+'/test_data/data_proc/images1/'
+        data_path =os.path.abspath(os.path.join(os.getcwd(),'..'))+'/test_data/data_proc/data1/'
         out_path = map_out_path + '/ground-truth-synth/'
         class_list, _ = get_classes(classes_path)
         file_list = sorted(os.listdir(images_path))
