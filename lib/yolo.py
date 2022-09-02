@@ -19,16 +19,16 @@ class YOLO(object):
         #Please modify it to the training mode
         "train_mode":0,
         #Please change the model path
-        "model_path": '/data1/jinyang/GaTector/logsSync/ep100-loss15.911-val_loss43.973.pth',
-        "classes_path": 'data/anchors/voc_classes.txt',
+        "model_path": '',
+        "classes_path": os.path.abspath(os.path.join(os.getcwd(),'..'))+'/data/anchors/voc_classes.txt',
         # ---------------------------------------------------------------------#
         # anchors_path represents the txt file corresponding to the a priori box, which is generally not modified.
         # anchors_mask is used to help the code find the corresponding a priori box, generally not modified.
         # ---------------------------------------------------------------------#
-        "anchors_path": 'data/anchors/yolo_anchors.txt',
+        "anchors_path": os.path.abspath(os.path.join(os.getcwd(),'..'))+'/data/anchors/yolo_anchors.txt',
         "anchors_mask": [[0, 1, 2]],
 
-        "anchors_path_3": 'data/anchors/yolo_anchors_3.txt',
+        "anchors_path_3":os.path.abspath(os.path.join(os.getcwd(),'..'))+ '/data/anchors/yolo_anchors_3.txt',
         "anchors_mask_3": [[6, 7, 8], [3, 4, 5], [0, 1, 2]],
         # ---------------------------------------------------------------------#
         #   The size of the input image must be a multiple of 32.
