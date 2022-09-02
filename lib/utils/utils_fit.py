@@ -12,7 +12,9 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
                   gen_val, Epoch, train_mode, cuda):
     loss = 0
     val_loss = 0
-
+    loss_value_alls = 0
+    l2_loss_alls = 0
+    box_energy_loss_alls = 0
     # GOO
     # Loss functions
     mse_loss = nn.MSELoss(reduce=False)  # not reducing in order to ignore outside cases
@@ -69,20 +71,22 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
                 gt_box = gt_box.squeeze(1)
                 box_energy_loss = compute_heatmap_loss_by_gtbox_predheatmap(gt_box, gaze_heatmap_pred)
                 total_loss =  loss_value +l2_loss+ box_energy_loss
+                loss_value_alls += loss_value
+                l2_loss_alls += l2_loss
+                box_energy_loss_alls += box_energy_loss
             if train_mode == 1:
                 total_loss=loss_value
             total_loss.backward()
             optimizer.step()
 
             loss += total_loss.item()
-            f_train=open('train_loss.csv','a+')
-            lists=[loss_value,l2_loss,box_energy_loss]
-            writer=csv.writer(f_train)
-            writer.writerow(lists)
             pbar.set_postfix(**{'loss': loss / (iteration + 1),
                                 'lr': get_lr(optimizer)})
             pbar.update(1)
-
+        f_train = open('train_loss.csv', 'a+')
+        lists = [loss_value_alls.item()/ (iteration + 1), l2_loss_alls.item()/ (iteration + 1), box_energy_loss_alls.item()/ (iteration + 1),loss/ (iteration + 1)]
+        writer = csv.writer(f_train)
+        writer.writerow(lists)
     print('Finish Train')
 
     model_train.eval()
@@ -91,7 +95,9 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
     model_train.eval()
     test_loss = []
     total_error = []
-
+    loss_value_alls = 0
+    l2_loss_alls = 0
+    box_energy_loss_alls = 0
     mse_loss = nn.MSELoss(reduce=False)  # not reducing in order to ignore outside cases
 
     all_gazepoints = []
@@ -101,8 +107,8 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
         for iteration, batch in enumerate(gen_val):
             if iteration >= epoch_step_val:
                 break
-            images, targets, faces, head, gaze_heatmap, eye_position, gaze = batch[0], batch[1], batch[2], batch[3], \
-                                                                             batch[4], batch[5], batch[6]
+            images, targets, faces, head, gaze_heatmap, eye_position, gaze,gt_box = batch[0], batch[1], batch[2], batch[3], \
+                                                                             batch[4], batch[5], batch[6],batch[7]
             with torch.no_grad():
                 val_images = torch.from_numpy(images).type(torch.FloatTensor).cuda()
                 val_head = torch.from_numpy(head).type(torch.FloatTensor).cuda()
@@ -133,14 +139,14 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
                     num_pos_all += num_pos
                 loss_value = loss_value_all / num_pos_all
                 if train_mode==0:
-                    box_energy_loss = compute_heatmap_loss_by_gtbox_predheatmap(gt_box, gaze_heatmap_pred)
+                    box_energy_loss = compute_heatmap_loss_by_gtbox_predheatmap(gt_box, val_gaze_heatmap_pred)
                     total_loss = l2_loss+loss_value+box_energy_loss  # + Xent_loss
+                    loss_value_alls+=loss_value
+                    l2_loss_alls+=l2_loss
+                    box_energy_loss_alls+=box_energy_loss
+
                 if train_mode == 1:
                     total_loss=loss_value
-                f_train = open(os.path.abspath(os.path.join(os.getcwd(), '../..')) + '/val_loss.csv', 'a+')
-                lists = [loss_value, l2_loss, box_energy_loss]
-                writer = csv.writer(f_train)
-                writer.writerow(lists)
                 val_loss+=total_loss
                 test_loss.append(total_loss.item())
 
@@ -186,8 +192,12 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
                         # score = roc_auc_score(gt_heatmap.reshape([-1]).astype(np.int32), heatmap.reshape([-1]))
 
                         total_error.append([f_dist, f_angle])
-            pbar.set_postfix(**{'va_loss': val_loss / (iteration + 1)})
+            pbar.set_postfix(**{'val_loss': val_loss / (iteration + 1)})
             pbar.update(1)
+        lists = [loss_value_alls.item() / (iteration + 1), l2_loss_alls.item() / (iteration + 1),box_energy_loss_alls.item() / (iteration + 1), val_loss.item() / (iteration + 1)]
+        f_train = open('val_loss.csv', 'a+')
+        writer = csv.writer(f_train)
+        writer.writerow(lists)
         if train_mode==0:
             l2, ang = np.mean(np.array(total_error), axis=0)
             all_gazepoints = np.vstack(all_gazepoints)
