@@ -30,7 +30,7 @@ if __name__ == "__main__":
     # The classes_path here is used to specify the category of VOC_map that needs to be measured
     # Generally, it is consistent with the classes_path used for training and prediction.
     # -------------------------------------------------------#
-    classes_path = 'data/anchors/voc_classes.txt'
+    classes_path = os.path.abspath(os.path.join(os.getcwd(),'..'))+'/data/anchors/voc_classes.txt'
     # -------------------------------------------------------#
     # MINOVERLAP is used to specify the mAP0.x you want to obtain
     # For example, to calculate mAP0.75, you can set MINOVERLAP = 0.75.
@@ -49,7 +49,7 @@ if __name__ == "__main__":
     # Point to the folder where the VOC data set is located
     # By default, it points to the VOC data set in the root directory
     # -------------------------------------------------------#
-    VOCdevkit_path = 'test_data/VOCdevkit'
+    VOCdevkit_path = os.path.abspath(os.path.join(os.getcwd(),'..'))+'/test_data/VOCdevkit'
     # -------------------------------------------------------#
     #   The output folder, the default is map_out
     # -------------------------------------------------------#
