@@ -196,10 +196,10 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
             writer.writerow(data_list)
     if train_mode==0:
         torch.save(model.state_dict(),
-                   'data/logsSynth/ep%03d-loss%.3f-val_loss%.3f.pth' % (epoch + 1, loss / epoch_step, val_loss / epoch_step_val))
+                   os.path.abspath(os.path.join(os.getcwd(),'../..'))+'data/logsSynth/ep%03d-loss%.3f-val_loss%.3f.pth' % (epoch + 1, loss / epoch_step, val_loss / epoch_step_val))
     if train_mode == 1:
         torch.save(model.state_dict(),
-                   'data/logsReal/ep%03d-loss%.3f-val_loss%.3f.pth' % (
+                   os.path.abspath(os.path.join(os.getcwd(),'../..'))+'data/logsReal/ep%03d-loss%.3f-val_loss%.3f.pth' % (
                    epoch + 1, loss / epoch_step, val_loss / epoch_step_val))
 
 def auc(heatmap, onehot_im, is_im=True):
