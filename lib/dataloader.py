@@ -182,7 +182,7 @@ class GaTectorDataset(Dataset):
 
         # operate_gt_box
         gaze_gt_box[:, [0, 2]] = gaze_gt_box[:, [0, 2]] * self.input_size / width
-        gaze_gt_box[:, [0, 2]] = gaze_gt_box[:, [0, 2]] * self.input_size / height
+        gaze_gt_box[:, [1, 3]] = gaze_gt_box[:, [1, 3]] * self.input_size / height
 
         box[:, 0:2][box[:, 0:2] < 0] = 0
         box[:, 2][box[:, 2] > self.input_size] = self.input_size
