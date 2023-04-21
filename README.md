@@ -144,9 +144,9 @@ You can test your data by modifying the images and annotations in './test_data/d
 
 Our model achieves the following performance on GOOSynth dataset:
 
-|  AUC  | Dist. | Ang.  |  AP  | AP50 | AP75 | Gaze object prediction mDAP (%) |
-| :---: | :---: | :---: | :--: | :--: | :--: | :-----------------------------: |
-| 0.957 | 0.073 | 14.91 | 56.8 | 95.3 | 62.5 |              81.34               |
+|  AUC  | Dist. | Ang.  |  AP  | AP50 | AP75 | GOP wUoC (%) | GOP mSoC (%) |
+| :---: | :---: | :---: | :--: | :--: | :--: | :----------: | :----------: |   
+| 0.957 | 0.073 | 14.91 | 56.8 | 95.3 | 62.5 |     81.10    |     67.94    |
 
 ## Our models
 
@@ -157,6 +157,8 @@ GOO-real (object detection)
 GOO-synth (gaze estimation + object detection)
 
 [GOO-synth ep098-loss15.975-val_loss42.955](https://mailnwpueducn-my.sharepoint.com/:u:/g/personal/yangle_nwpu_mail_nwpu_edu_cn/ESIoyH3COT5Bp4RCRQ7ipMgBmeHxPx-hVgSvDIz9JmICNw)
+
+## Note:
 
 ## Citation
 
