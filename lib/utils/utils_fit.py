@@ -139,6 +139,7 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
                     num_pos_all += num_pos
                 loss_value = loss_value_all / num_pos_all
                 if train_mode==0:
+                    gt_box = gt_box.squeeze(1)
                     box_energy_loss = compute_heatmap_loss_by_gtbox_predheatmap(gt_box, val_gaze_heatmap_pred)
                     total_loss = l2_loss+loss_value+box_energy_loss  # + Xent_loss
                     loss_value_alls+=loss_value
