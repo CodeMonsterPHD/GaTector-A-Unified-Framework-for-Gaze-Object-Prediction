@@ -160,8 +160,10 @@ GOO-synth (gaze estimation + object detection)
 
 ## Note(mSoC):
 Since the wUoC metric is invalid when the area of the ground truth box is equal to the area of the predicted box, we redefine the weight of wUoC as min(p/a, g/a). We call the improved metric **mSoC**. We report the performance of GOP using mSoC again in results
-<img src=./figs/msoc.png width=60% />
-<img src=./figs/metric_error.png width=60% />
+<div align="center">
+<img src=./figs/msoc.png width=30% />
+<img src=./figs/metric_error.png width=30% />
+</div>
 
 ## Citation
 
